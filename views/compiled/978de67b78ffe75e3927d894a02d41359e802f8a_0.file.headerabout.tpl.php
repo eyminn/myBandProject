@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2016-10-31 13:41:09
-  from "C:\wamp\www\BAE\myBand2\views\header.tpl" */
+/* Smarty version 3.1.30, created on 2016-10-31 12:14:34
+  from "C:\wamp\www\BAE\myBand2\views\headerabout.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_58173be545a579_11683576',
+  'unifunc' => 'content_5817279a321df3_64238206',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '5cb10915452cb215e328e0545fbae1098e0c4053' => 
+    '978de67b78ffe75e3927d894a02d41359e802f8a' => 
     array (
-      0 => 'C:\\wamp\\www\\BAE\\myBand2\\views\\header.tpl',
-      1 => 1477917667,
+      0 => 'C:\\wamp\\www\\BAE\\myBand2\\views\\headerabout.tpl',
+      1 => 1477912463,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_58173be545a579_11683576 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5817279a321df3_64238206 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
 <header>
 	<?php
@@ -44,21 +44,11 @@ foreach ($_from as $_smarty_tpl->tpl_vars['oneMenu']->value) {
 		</ul>
 
 	</div>
-
-	<div class="headerimg">
-
-			<img src="img/headerimg.jpg" id="slide1">	
-	</div>
-	<input type="button" value="forward" id="forward" />
-    <input type="button" value="back" id="backward" />
-
 	<?php
 }
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
 ?>
 
-</header>
-
-<?php }
+</header><?php }
 }
