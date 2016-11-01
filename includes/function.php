@@ -23,5 +23,13 @@ function Menu($data3){
 	return $array3;
 }
 
+function e($eData){
+
+	while ($resultevents = $eData->fetch_assoc() ){
+		$arrayE[] = $resultevents;
+	}
+	return $arrayE;
+}
+
 
  ?>

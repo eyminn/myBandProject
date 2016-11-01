@@ -15,7 +15,7 @@ define('DB_NAME','21814_myBand');
 define('DB_USERNAME','amin');
 define('DB_PASSWORD','rsxsnvzn');
 
-define('ITEMS_PER_PAGE',2);
+define('ITEMS_PER_PAGE',3);
 
 
 ?>	

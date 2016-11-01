@@ -20,11 +20,10 @@ $templateParser->display('head.tpl');
 $templateParser->assign('result3', $result3);
 
 
-
 // Get newsarticles from database
 
-$action = $_GET['action'];
-
+$action = isset( $_GET['action'])?$_GET['action']:'home';
+$page_nr = isset($_GET['page_nr'])? $_GET['page_nr']=0:$_GET['page_nr'];
 switch ($action) {
 	case 'home':
 			$templateParser->display('header.tpl');
@@ -36,6 +35,11 @@ switch ($action) {
 			$templateParser->assign('result2', $result2);
 			$templateParser->display('about.tpl');
 
+		break;
+	case 'new':
+			$templateParser->display('headernew.tpl');
+			$templateParser->assign('resultevents', $resultevents);
+			$templateParser->display('new.tpl');
 		break;
 	default:
 			$templateParser->display('header.tpl');

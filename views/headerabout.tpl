@@ -9,7 +9,7 @@
 		<ul>
 			<li><a href="?action=home">{$oneMenu.page1}</a></li>
 			<li><a href="?action=about">{$oneMenu.page2}</a></li>
-			<li><a href="#">NEW</a></li>
+			<li><a href="?action=new">NEW</a></li>
 			<li><a href="#">CONTACT</a></li>
 		</ul>
 

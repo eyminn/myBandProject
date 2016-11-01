@@ -6,17 +6,17 @@
 	{foreach from=$result item=oneItem}
 		
 		<article>
-			<p>Uploaded : {$oneItem.date_created|date_format:"%d, %B, %Y"}</p>
 			<h1>{$oneItem.title}</h1>
+			<h3><em>Uploaded : {$oneItem.date_created|date_format:"%d %B, %Y"}</em></h3>
 			<img src="img/{$oneItem.image}">
-			<h1>{$oneItem.content|truncate:30}</h1>
+			<p>{$oneItem.content}</p>
 		</article>
 
 	{/foreach}
 	<div class="pagination">
-		<ul>
-			<li>1</li>
-			<li>2</li>
+		<ul >
+			<li><a href="?action=home&page_nr=1">1</a></li>
+			<li><a href="?action=home&page_nr=2">2</a></li>
 			<li>3</li>
 			<li>4</li>
 			<li>5</li>

@@ -1,6 +1,7 @@
 <?php
 
-
+$resultevents = $mysqli->query("SELECT * FROM events ORDER BY datum DESC");
+$resultevents = e($resultevents);
 
 $result2 = $mysqli->query("SELECT * FROM aboutpage");
 $result2 = ContentAbout($result2);

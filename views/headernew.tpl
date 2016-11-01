@@ -18,13 +18,6 @@
 
 	</div>
 
-	<div class="headerimg">
-
-			<img src="img/headerimg.jpg" id="slide1">	
-	</div>
-	<input type="button" value="forward" id="forward" />
-    <input type="button" value="back" id="backward" />
-
 	{/foreach}
 </header>
 
