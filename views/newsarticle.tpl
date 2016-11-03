@@ -1,5 +1,4 @@
 <div class="contenttitle">
-	<h1>RECENT POSTS</h1>
 </div>
 <section class="homepagecontent">
 	<div class="articlemap">
@@ -17,9 +16,9 @@
 		<ul >
 			<li><a href="?action=home&page_nr=1">1</a></li>
 			<li><a href="?action=home&page_nr=2">2</a></li>
-			<li>3</li>
-			<li>4</li>
-			<li>5</li>
+			<li><a href="?action=home&page_nr=3">3</a></li>
+			<li><a href="?action=home&page_nr=4">4</a></li>
+			<li><a href="?action=home&page_nr=5">5</a></li>
 		</ul>
 	</div>
 	</div>

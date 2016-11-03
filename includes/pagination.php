@@ -15,7 +15,7 @@
 
 	$sql = "SELECT * FROM newsarticles ORDER BY id ASC LIMIT ".$startItem.",  ".$itemsperpage." ";
 	$newsresult = $mysqli->query($sql);
-	$result = Content($newsresult);
+	$result = e($newsresult);
 
 
 

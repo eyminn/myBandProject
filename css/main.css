@@ -10,6 +10,9 @@ body {
 header{
 	width:100%;
 }
+header input{
+	position:absolute;
+}
 .desc {
 
 	background-color: #fff;
@@ -19,6 +22,45 @@ header{
 	margin-top: -20px;
 	width: 200px;
 		
+}
+.search{
+	width:100%;
+	height:auto;
+	float:right;
+	margin-top:35%;
+}
+.search input{
+	width:150px;
+	background-color:#2d2c2c;
+	padding:3px 8px 3px 8px;
+	border-radius:5px;
+	border: 1px solid white;
+	color:white;
+	height:16px;
+	display:inline-block;
+	margin-left:90px;
+}
+.search img{
+	display:inline-block;
+	float:right;
+	margin-top:-3px;
+	margin-right:23%;
+	vertical-align:top;
+}
+.buttons{
+	position:absolute;
+	width:75%;
+	right:0;
+	z-index:950;
+}
+#forward{
+	float:right;
+	margin-right:2%;
+	margin-top:25%;
+}
+#backward{
+	margin-left:2%;
+	margin-top:25%;
 }
 #head{
 	width:100%;
@@ -48,9 +90,13 @@ header{
 	margin-left:auto;
 	margin-right:auto;
 	height:auto;
-	font-size: 21px;
-	color:#828c99;
+	font-size: 16px;
+	color:black;
 	font-family:Arial;
+	border-top:1px solid #828c99;
+	border-bottom:1px solid #828c99;
+	padding-top:10px;
+	padding-bottom:10px;
 }
 .aboutheader{
 	width:71.5%;
@@ -59,12 +105,13 @@ header{
 }
 .aboutheader h1{
 	font-family:prime;
-	font-size:3em;
+	font-size:2.5em;
 	text-align:center;
+	font-weight: 900;
 }
 #menu{
 	background-color:#2d2c2c;
-	width:28.2%;
+	width:25%;
 	height:1080px;
 	display:inline-block;
 	position:fixed;
@@ -83,7 +130,7 @@ header{
 	text-align:right;
 	margin-right:0px;
 	margin-top:5%	;
-	font-size:1.5em;
+	font-size:1em;
 	font-family:prime;
 	font-weight:900;
 }
@@ -101,50 +148,42 @@ header{
 	float:right;
 }
 .articlemap{
-	width:80%;
+	width:70%;
 	margin-left:auto;
 	margin-right:auto;
 }
 .headerimg{
-	width:100%;
-	height:900px;
+	width:75%;
+	height:640px;
+	float:right;
+	position:relative;
+	z-index:900;
 }
 .headerimg img{
-	float:right;
 	-moz-filter: brightness(60%);
 	-webkit-filter:brightness(60%);;
+	width:1139px;
+	height:637px;
 }
 .headerlogo{
 	width:100%;
-	height:15%;
+	height:12%;
 }
 .headerlogo img{	
 	margin-top:20%;
-	width:251px;
+	width:200px;
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
 }
-.headerlogo h1{
-	color:white;
-	font-family:prime;
-	float:right;
-	width:85%;
-	padding:0px;
-	margin-top:7%;
-	font-weight:900;
-	font-size:2.5em;
-	margin-right:9%;
-	text-align:right;
-}
 .socailicons{
-	width:281px;
+	width:200px;
 	margin-left:auto;
 	margin-right:auto;
 	margin-bottom:15%;
 }
 .socailicons img{
-	margin-left:30px;
+	margin-left:20px;
 }
 .sidebar{
 	background-color:black;
@@ -160,13 +199,14 @@ header{
 .contenttitle h1{
 	font-family:prime;
 	text-align:center;
+	margin-top:5%;
 }
 .pagination{
-	width:80%;
+	width:100%;
 	height:44px;
 	margin-left:auto;
 	margin-right:auto;
-	border-top:1px solid black;
+	border-top:1px solid #828c99;
 	margin-top:5%;
 }
 .pagination ul{
@@ -176,7 +216,7 @@ header{
 	margin-bottom:0px;
 	padding:0px;
 	height:44px;
-	width:25%;
+	width:27.5%;
 }
 .pagination ul li{
 	display:block;
@@ -188,14 +228,18 @@ header{
 .events{
 	float:right;
 	height:auto;
-	width:72%;
+	width:75%;
 }
 .newwrapper{
-	width:82%;
+	width:77.1%;
 	height:auto;
 	margin-left:auto;
 	margin-right:auto;
 	margin-top:5%;
+	padding-bottom:40px;
+	padding-top:40px;
+	border-bottom:10px solid #828c99;
+	border-top:10px solid #828c99;
 }
 .newwrapper article{
 	width:285px;
@@ -216,30 +260,176 @@ header{
 	margin:0px;
 	color:#828c99;
 }
+.datatable{
+	width:70%;
+	margin-top:5%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.datatable table{
+	width:100%;
+}
+.datatable table thead{
+	width:100%;
+}
+.datatable table tbody tr{
+
+}
+.datatable table tbody tr td{
+	font-family:arial;
+	font-size:15px;
+	border-top:11px solid white;
+	padding-bottom:10px;
+	border-bottom:1px solid black;
+}
+.eventsheader{
+	width:100%;
+	float:right;
+	margin-top:1.5%;
+}
+.blankspace{
+	height:50px;
+}
+.eventsheader h1{
+	text-align:center;
+	font-family:prime;
+	font-size:2.5em;
+
+}
+.tableheader{
+	text-align:left;
+	font-family:Arial;
+	font-size:18px;	
+}
+.location{
+	text-align:right;
+	font-family:Arial;
+	font-size:18px;
+	width:20%;
+}
+.tLocation{
+	text-align:right;
+}
 .articlemap article{
-	width:870px;
+	width:760px;
 	margin-top:5%;
 	border-top:1px solid #828c99;
 	margin-left:auto;
 	margin-right:auto;
 }
 .articlemap article h3{
-	font-size:15px;
+	font-size:10px;
 	color:#828c99;
 	font-family:Arial;
 }
 .articlemap article p{
-	font-size:20px;
+	margin-top:5%;
+	font-size:15px;
 	font-family:arial;
 }
 .articlemap article h1{
 	font-family:Arial;
+	font-size:2em;
+}
+.contact{
+	width:75%;
+	height:auto;
+	float:right;
+}
+.contact h1{
+	font-family:prime;
+	width:80%;
 	font-size:2.5em;
+	margin-left:auto;
+	margin-right:auto;
+}
+.contactwrapper{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.form{
+	width:68%;
+	display:inline-block;
+}
+.form form label{
+	margin-bottom:1%;
+	display:block;
+	width:100%;
+	font-family:prime;
+	font-weight: 900;
+	font-size:1.1em;
+}
+.contactforminput{
+	margin-top:1%;
+	width:98%;
+	height:50px;
+	border:none;
+	padding-left:10px;
+	font-family:arial;
+	background-color:#e1e1e1;
+	margin-bottom:5%;
+}
+.form form textarea{
+	margin-top:0.8%;
+	background-color:#e1e1e1;
+	width:98%;
+	border:none;
+	padding:5px;
+}
+.submitbutton{
+	background-color:#2d2c2c;
+	color:white;
+	font-family:prime;
+	font-weight:900;
+	width:20%;
+	height:40px;
+	font-size:1.1em;
+	margin-top:2%;
+}
+.contactinfo{
+	width:29%;
+	display:inline-block;
+	height:637px;
+	float:right;
+	vertical-align: top;
+	background-color:#e1e1e1;
+}
+.contactinfo h3{
+	width:82%;
+	padding-bottom:5%;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	font-weight:900;
+	font-family:prime;
+	border-bottom:2px solid black;
+	margin-bottom:10%;
+}
+.contactinfo div{
+	width:82%;
+	margin-top:2%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.contactinfo h4{
+	vertical-align: top;
+	font-family:arial;
+	font-size:11px;
+	width:80%;
+	padding:0px;
+	float:right;
+	text-align:right;
+	margin:0px;
+	display:inline-block;
+}
+.contactinfo img{
+	display: inline-block;
 }
 footer{
 	background-color:#770215;
-	width:71.8%;
-	height:180px;
+	width:75%;
+	height:150px;
 	float:right;
 	margin-top:5%;
 	vertical-align:bottom;
@@ -250,9 +440,12 @@ footer div{
 	margin-right:auto;
 }
 footer div h1{
-	font-family:prime;
+	font-family:Arial;
 	color:white;
-	font-size:3em;
+	font-size:1.8em;
+	margin-bottom:10px;
+	padding:0px;
+	margin-top:9%;
 	text-align:center;
 }
 footer div p{
@@ -260,6 +453,11 @@ footer div p{
 	color:white;
 	font-size:0.8em;
 	text-align:center;
+}
+footer div p em a{
+	text-decoration: none;
+	color:white;
+	border-bottom:1px solid white;
 }
 
 
